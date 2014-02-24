@@ -1,14 +1,27 @@
 {
     "name": "qranio/azure-sdk-pear-deps",
     "description": "PEAR dependencies for Windows Azure PHP SDK",
-    "keywords": ["azure", "pear", "dependency", "sdk"],
-    "license": ["MIT", "Apache-2.0"],
+    "keywords": [
+        "azure",
+        "pear",
+        "dependency",
+        "sdk"
+    ],
+    "license": [
+        "MIT",
+        "Apache-2.0"
+    ],
     "authors": [
         {
             "name": "Qranio",
             "email": "equipe@qranio.com"
         }
     ],
+    "autoload": {
+        "psr-0": {
+            "HTTP_": "src/"
+        }
+    },
     "include-path": [
         "src/"
     ]
