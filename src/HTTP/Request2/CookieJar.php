@@ -28,7 +28,7 @@ require_once 'HTTP/Request2.php';
  * @package  HTTP_Request2
  * @author   Alexey Borzov <avb@php.net>
  * @license  http://opensource.org/licenses/BSD-3-Clause BSD 3-Clause License
- * @version  Release: @package_version@
+ * @version  Release: 2.2.1
  * @link     http://pear.php.net/package/HTTP_Request2
  */
 class HTTP_Request2_CookieJar implements Serializable
@@ -434,7 +434,7 @@ class HTTP_Request2_CookieJar implements Serializable
 
         // load the list if needed
         if (empty(self::$psl)) {
-            $path = '@data_dir@' . DIRECTORY_SEPARATOR . 'HTTP_Request2';
+            $path = 'C:\xampp\htdocs\qranio.com-ws\vendor/pear-pear.php.net/HTTP_Request2/data' . DIRECTORY_SEPARATOR . 'HTTP_Request2';
             if (0 === strpos($path, '@' . 'data_dir@')) {
                 $path = realpath(
                     dirname(__FILE__) . DIRECTORY_SEPARATOR . '..'
